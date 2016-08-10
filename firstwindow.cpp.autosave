@@ -1,0 +1,25 @@
+#include "form2.h"
+#include "ui_form2.h"
+
+Form2::Form2(QWidget *parent) :
+    QWidget(parent),
+    ui(new Ui::Form2)
+{
+    ui->setupUi(this);
+    //Инициализируем окно с входом
+    SWindow = new Widget();
+    //Подключаем к слоту запуска главного окна по кнопке "Закрыть", окна с входом.
+    connect(sWindow, &Widget::, this, &Form2)
+    
+    
+}
+
+Form2::~Form2()
+{
+    delete ui;
+}
+
+void Form2::on_pushButton_clicked()
+{
+
+}
