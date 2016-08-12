@@ -39,7 +39,6 @@ void Widget::get_friends()
     QUrl current("https://api.vk.com/method/friends.get");
     QUrlQuery Param;
 
-    Param.addQueryItem("user_id","33061210");
     Param.addQueryItem("v", "5.53");
     Param.addQueryItem("fields", "first_name, last_name");
     Param.addQueryItem("access_token", token);
